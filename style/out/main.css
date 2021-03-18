@@ -1,0 +1,117 @@
+body {
+  /*background-color: $base-color;*/
+  background-image: url(/images/landscape.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.wrapper {
+  height: 100%;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.navbar {
+  margin-top: 0px;
+  background-color: #607d8b;
+  height: 5%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuIcon {
+  background-color: white;
+}
+.menuIcon div {
+  background-color: black;
+  height: 5px;
+  width: 35px;
+  margin: 5px 0;
+}
+.menuIcon:hover .bar1 {
+  transform: rotate(45deg) translateY(7px) translateX(7px);
+}
+.menuIcon:hover .bar2 {
+  opacity: 0;
+}
+.menuIcon:hover .bar3 {
+  transform: rotate(315deg) translateY(-7px) translateX(7px);
+}
+.menuIcon:hover {
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h1 {
+  text-shadow: 2px 2px #37474f;
+}
+h1 .space {
+  font-style: oblique;
+}
+h1 .space:hover {
+  color: #37474f;
+}
+
+.content-box {
+  height: 500px;
+  width: 35%;
+  padding: 10px;
+  background-color: #607d8b;
+  opacity: 0.8;
+  color: #eceff1;
+  border-radius: 7px;
+  box-shadow: 3px 3px #37474f;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.aldrin {
+  font-size: 20px;
+}
+.aldrin:hover {
+  color: black;
+}
+
+#rocket:hover {
+  transform: rotate(360deg);
+  transition: 2.5s;
+}
+
+.footbar {
+  height: 10%;
+  background-color: #607d8b;
+  color: #eceff1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.far {
+  color: #eceff1;
+}
+.far:hover {
+  color: #37474f;
+}
+
+.fas {
+  color: #eceff1;
+}
+.fas:hover {
+  color: #37474f;
+}
+
+/*# sourceMappingURL=main.css.map */
