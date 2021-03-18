@@ -1,126 +1,121 @@
-$base-color:#b0bec5;
+$base-color: #b0bec5;
 $secondColor: #607d8b;
-$primaryFontColor:  #eceff1;
-$hoverColor:  #37474f;
+$primaryFontColor: #eceff1;
+$hoverColor: #37474f;
 
 @mixin iconColor {
-    color: $primaryFontColor;
-        &:hover{
-            color: $hoverColor;
-    }
+  color: $primaryFontColor;
+  &:hover {
+    color: $hoverColor;
+  }
 }
 
-body{
-    /*background-color: $base-color;*/
-    background-image: url(/images/landscape.jpg);
-    background-size: cover;
-    height: 100vh;
+body {
+  /*background-color: $base-color;*/
+  background-image: url(/images/landscape.jpg);
+  background-size: cover;
+  height: 100vh;
 }
 .wrapper {
-    height: 100%;
-    margin-top: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: space-around;
-    
-}        
-
-.navbar {
-    margin-top: 0px;
-    background-color: $secondColor;
-    height: 5%;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    }
-
-    .menuIcon{
-        background-color: white;
-             div {
-            background-color: black;
-            height: 5px;
-            width: 35px;
-            margin: 5px 0;
-            }    
-        &:hover .bar1 {
-                transform: rotate(45deg) translateY(7px) translateX(7px);
-            }
-        &:hover .bar2 {
-                opacity: 0;
-            }   
-          &:hover .bar3 {
-                transform: rotate(315deg) translateY(-7px) translateX(7px);
-                
-            } 
-          &:hover {
-              cursor: pointer;
-          }  
-        }
-
- .content{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-    }
-h1{
-    text-shadow: 2px 2px $hoverColor;
-
-    .space {
-        font-style: oblique;
-        &:hover {
-         color: $hoverColor;  
-        }
-    }
+  height: 100%;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
 }
 
- .content-box {
-     height: 500px;
-     width: 35%;
-     padding: 10px;
-    background-color: $secondColor;
-    opacity: 0.8;
-     color: $primaryFontColor;
-     border-radius: 7px;
-     box-shadow: 3px 3px $hoverColor;
-     text-align: justify;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: space-evenly;
-     
- }  
- .aldrin {
-     font-size: 20px;
-     &:hover{
-         color: black;
-     }
- } 
- 
- #rocket {
-     &:hover {
-         transform: rotate( 360deg);
-         transition: 2.5s;
-     }
- }
+.navbar {
+  margin-top: 0px;
+  background-color: $secondColor;
+  height: 5%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuIcon {
+  background-color: white;
+  div {
+    background-color: black;
+    height: 5px;
+    width: 35px;
+    margin: 5px 0;
+  }
+  &:hover .bar1 {
+    transform: rotate(45deg) translateY(7px) translateX(7px);
+  }
+  &:hover .bar2 {
+    opacity: 0;
+  }
+  &:hover .bar3 {
+    transform: rotate(315deg) translateY(-7px) translateX(7px);
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+h1 {
+  text-shadow: 2px 2px $hoverColor;
+
+  .space {
+    font-style: oblique;
+    &:hover {
+      color: $hoverColor;
+    }
+  }
+}
+
+.content-box {
+  height: 500px;
+  width: 35%;
+  padding: 10px;
+  background-color: $secondColor;
+  opacity: 0.8;
+  color: $primaryFontColor;
+  border-radius: 7px;
+  box-shadow: 3px 3px $hoverColor;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.aldrin {
+  font-size: 20px;
+  &:hover {
+    color: black;
+  }
+}
+
+#rocket {
+  &:hover {
+    transform: rotate(360deg);
+    transition: 2.5s;
+  }
+}
 
 .footbar {
-    height: 10%;
-    background-color: $secondColor;
-    color: $primaryFontColor;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  height: 10%;
+  background-color: $secondColor;
+  color: $primaryFontColor;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .far {
-    @include iconColor;
+  @include iconColor;
 }
 
 .fas {
-    @include iconColor;
+  @include iconColor;
 }
-
-

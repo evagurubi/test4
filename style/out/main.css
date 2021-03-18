@@ -1,6 +1,6 @@
 body {
   /*background-color: $base-color;*/
-  background-image: url(/images/landscape.jpg);
+  background-image: url(./landscape.jpg);
   background-size: cover;
   height: 100vh;
 }
